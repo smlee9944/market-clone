@@ -51,10 +51,15 @@ main {
   position: fixed;
   bottom: 120px;
   right: 20px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.write-btn:hover {
+  background-color: blue;
 }
 
 .media-info {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -63,11 +68,10 @@ main {
   justify-content: center;
   align-content: center;
   background-color: tomato;
-  opacity: 1;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-info {
-    opacity: 0;
+    display: none;
   }
 }
